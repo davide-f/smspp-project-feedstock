@@ -23,7 +23,8 @@ requirements:
     - ninja  # [win]
   host:
     - libgomp  # [linux]
-    - llvm-openmp   # [osx or win]
+    - llvm-openmp   # [osx]
+    - intel-openmp  # [win]
     - libboost-devel
     - libboost-mpi >={{ libboost_devel }}
     - netcdf-cxx4 *.* nompi_*
