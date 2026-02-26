@@ -48,6 +48,8 @@ requirements:
     - pthreads-win32  # [win]
     - mkl-devel  # [win]
     - zstd  # [win]
+  run:
+    - msmpi  # [win]
 
 test:
   source_files:
