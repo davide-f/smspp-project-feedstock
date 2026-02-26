@@ -50,6 +50,7 @@ requirements:
     - zstd  # [win]
   run:
     - msmpi  # [win]
+    - pthreads-win32  # [win]
 
 test:
   source_files:
