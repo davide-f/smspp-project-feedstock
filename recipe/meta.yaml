@@ -43,7 +43,8 @@ requirements:
     - coin-or-osi
     # - scip >=9.2.3
     - highs >=1.10.0
-    - stopt >=6.1
+    - stopt >=6.1  # [win]
+    - stopt >=5.16  # [unix]
     - getopt-win32  # [win]
     - pthreads-win32  # [win]
     - mkl-devel  # [win]
