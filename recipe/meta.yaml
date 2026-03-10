@@ -9,7 +9,6 @@ source:
   sha256: 02d30a318b39491edc92b98cbe78ddbdd68891695493667b53728a80e3696967
 
 build:
-  skip: True  # [win]
   number: 1
   run_exports:
     - {{ pin_subpackage('smspp-project', max_pin='x.x.x') }}
@@ -24,7 +23,8 @@ requirements:
     - ninja  # [win]
   host:
     - libgomp  # [linux]
-    - llvm-openmp   # [osx or win]
+    - llvm-openmp   # [osx]
+    - intel-openmp  # [win]
     - libboost-devel
     - libboost-mpi >={{ libboost_devel }}
     - netcdf-cxx4 *.* nompi_*
@@ -43,11 +43,15 @@ requirements:
     - coin-or-osi
     # - scip >=9.2.3
     - highs >=1.10.0
-    - stopt >=5.16
+    - stopt >=6.1  # [win]
+    - stopt >=5.16  # [unix]
     - getopt-win32  # [win]
     - pthreads-win32  # [win]
     - mkl-devel  # [win]
     - zstd  # [win]
+  run:
+    - msmpi  # [win]
+    - pthreads-win32  # [win]
 
 test:
   source_files:
