@@ -5,8 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/smspp/smspp-project/-/releases/{{ version }}/downloads/smspp-project-{{ version }}.tar.gz
-  sha256: 02d30a318b39491edc92b98cbe78ddbdd68891695493667b53728a80e3696967
+  git_url: https://gitlab.com/smspp/smspp-project
 
 build:
   number: 1

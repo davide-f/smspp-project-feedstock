@@ -2,6 +2,10 @@ set -ex
 export LDFLAGS=${LDFLAGS//-Wl,--as-needed/}
 export LDFLAGS=${LDFLAGS//-Wl,-dead_strip_dylibs/}
 
+# build SMS++
+git submodule init
+git submodule update
+
 mkdir build
 cd build
 cmake ${CMAKE_ARGS} \
