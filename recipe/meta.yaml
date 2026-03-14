@@ -68,6 +68,7 @@ test:
     - |
       cd InvestmentBlock/test
       cp config/BSPar.txt BSPar.txt
+      cp config/uc_solverconfig.txt uc_solverconfig.txt
       InvestmentBlock_test InvestmentBlockBus.nc4 -S BSPar.txt
 
 about:
