@@ -23,11 +23,11 @@ docker_image:
 libaec:
 - '1'
 libboost_devel:
-- '1.88'
+- '1.89'
 libcurl:
 - '8'
 mpich:
-- '4'
+- '5'
 openssl:
 - '3.5'
 target_platform:
