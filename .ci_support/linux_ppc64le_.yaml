@@ -27,7 +27,7 @@ libboost_devel:
 libcurl:
 - '8'
 mpich:
-- '4'
+- '5'
 openssl:
 - '3.5'
 target_platform:
