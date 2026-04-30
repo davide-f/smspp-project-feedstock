@@ -60,7 +60,7 @@ test:
     - InvestmentBlock
   commands:
     - ucblock_solver --help
-    - InvestmentBlock_test --help
+    - investmentblock_solver --help
     - |
       cd tools/ucblock_solver/examples
       cp ../config/BSCfg.txt BSCfg.txt
@@ -70,7 +70,7 @@ test:
       cd InvestmentBlock/test
       cp config/BSPar.txt BSPar.txt
       cp config/uc_solverconfig.txt uc_solverconfig.txt
-      InvestmentBlock_test InvestmentBlockBus.nc4 -S BSPar.txt
+      investmentblock_solver InvestmentBlockBus.nc4 -S BSPar.txt
 
 about:
   home: https://gitlab.com/smspp/smspp-project
