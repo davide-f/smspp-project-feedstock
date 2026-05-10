@@ -56,7 +56,6 @@ requirements:
 test:
   source_files:
     - tools
-    - InvestmentBlock
   commands:
     - ucblock_solver --help
     - investmentblock_solver --help
@@ -66,7 +65,7 @@ test:
       ucblock_solver Bus_Test.nc4 -S BSCfg.txt
       cd ../../..
     - |
-      cd InvestmentBlock/test
+      cd investmentblock_solver
       cp config/BSPar.txt BSPar.txt
       cp config/uc_solverconfig.txt uc_solverconfig.txt
       investmentblock_solver InvestmentBlockBus.nc4 -S BSPar.txt
