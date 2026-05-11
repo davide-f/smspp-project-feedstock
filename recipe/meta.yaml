@@ -67,6 +67,7 @@ test:
     - |
       cd tools/investmentblock_solver
       cp config/BSPar.txt BSPar.txt
+      cp config/BSCfg.txt BSCfg.txt
       investmentblock_solver InvestmentBlockBus.nc4 -S BSPar.txt
 
 about:
