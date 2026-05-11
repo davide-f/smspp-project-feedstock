@@ -66,7 +66,7 @@ test:
       ucblock_solver Bus_Test.nc4 -S BSCfg.txt
       cd ../../..
     - |
-      cd investmentblock_solver
+      cd tools/investmentblock_solver
       cp config/BSPar.txt BSPar.txt
       cp config/uc_solverconfig.txt uc_solverconfig.txt
       investmentblock_solver InvestmentBlockBus.nc4 -S BSPar.txt
