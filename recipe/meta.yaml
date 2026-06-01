@@ -45,11 +45,9 @@ requirements:
     - stopt >=6.3  # [win]
     - stopt >=5.16  # [unix]
     - getopt-win32  # [win]
-    - pthreads-win32  # [win]
+    - winpthreads  # [win]
     - mkl-devel  # [win]
     - zstd  # [win]
-  run:
-    - pthreads-win32  # [win]
 
 test:
   source_files:
