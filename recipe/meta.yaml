@@ -20,7 +20,6 @@ requirements:
     - make
     - pkgconfig  # [unix]
     - ninja  # [win]
-    - highs >=1.10.0
   host:
     - libgomp  # [linux]
     - llvm-openmp   # [osx]
