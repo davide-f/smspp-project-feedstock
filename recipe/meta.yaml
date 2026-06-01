@@ -18,10 +18,9 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
     - cmake >=3.15
-    - make
+    - make  # [unix]
     - pkgconfig  # [unix]
     - ninja  # [win]
-    - winpthreads  # [win]
   host:
     - libgomp  # [linux]
     - llvm-openmp   # [osx or win]
@@ -48,6 +47,7 @@ requirements:
     - getopt-win32  # [win]
     - mkl-devel  # [win]
     - zstd  # [win]
+    - winpthreads-devel  # [win]
 
 test:
   source_files:
