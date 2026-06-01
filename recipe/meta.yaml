@@ -21,6 +21,7 @@ requirements:
     - make
     - pkgconfig  # [unix]
     - ninja  # [win]
+    - winpthreads  # [win]
   host:
     - libgomp  # [linux]
     - llvm-openmp   # [osx or win]
@@ -45,7 +46,6 @@ requirements:
     - stopt >=6.3  # [win]
     - stopt >=5.16  # [unix]
     - getopt-win32  # [win]
-    - winpthreads  # [win]
     - mkl-devel  # [win]
     - zstd  # [win]
 
