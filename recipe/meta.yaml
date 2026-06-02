@@ -53,7 +53,7 @@ test:
   requires:
     - vs2022_win-64  # [win]
     - python # [win]
-    - lief # [win]
+    - py-lief # [win]
   source_files:
     - tools
     - InvestmentBlock
