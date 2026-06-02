@@ -54,6 +54,9 @@ test:
     - tools
     - InvestmentBlock
   commands:
+    - where impi.dll                          # [win]
+    - echo I_MPI_ROOT=%I_MPI_ROOT%            # [win]
+    - where InvestmentBlock_test              # [win]
     - ucblock_solver --help
     - InvestmentBlock_test --help
     # - |  # To re-enable at the next release when Bus_Test.nc4 is available
