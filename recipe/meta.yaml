@@ -62,7 +62,7 @@ test:
     - echo I_MPI_ROOT=%I_MPI_ROOT%            # [win]
     - where InvestmentBlock_test              # [win]
     - dumpbin /dependents StOpt.lib  # [win]
-    - dumpbin /dependents InvestmentBlock_test.exe  # [win]
+    - dumpbin /dependents %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
     - python -c "import lief, shutil; exe = shutil.which('InvestmentBlock_test.exe') or 'InvestmentBlock_test.exe'; pe = lief.parse(exe); print('PE imports for ' + exe + ':'); print('\n'.join(' ' + dll for dll in pe.imported_libraries))" # [win]
     - ucblock_solver --help
     - InvestmentBlock_test --help
