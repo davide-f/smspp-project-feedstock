@@ -50,6 +50,10 @@ requirements:
     - winpthreads-devel  # [win]
 
 test:
+  requires:
+    - vs2022_win-64  # [win]
+    - python # [win]
+    - lief # [win]
   source_files:
     - tools
     - InvestmentBlock
@@ -57,6 +61,9 @@ test:
     - where impi.dll                          # [win]
     - echo I_MPI_ROOT=%I_MPI_ROOT%            # [win]
     - where InvestmentBlock_test              # [win]
+    - dumpbin /dependents StOpt.lib  # [win]
+    - dumpbin /dependents InvestmentBlock_test.exe  # [win]
+    - python -c "import lief, shutil; exe = shutil.which('InvestmentBlock_test.exe') or 'InvestmentBlock_test.exe'; pe = lief.parse(exe); print('PE imports for ' + exe + ':'); print('\n'.join(' ' + dll for dll in pe.imported_libraries))" # [win]
     - ucblock_solver --help
     - InvestmentBlock_test --help
     # - |  # To re-enable at the next release when Bus_Test.nc4 is available
