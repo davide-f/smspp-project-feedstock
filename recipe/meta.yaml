@@ -60,6 +60,7 @@ test:
   commands:
     - where impi.dll                          # [win]
     - where mkl_rt.3.dll                     # [win]
+    - where libomp140.x86_64.dll           # [win]
     - echo I_MPI_ROOT=%I_MPI_ROOT%            # [win]
     - where InvestmentBlock_test              # [win]
     - dumpbin /dependents StOpt.lib  # [win]
