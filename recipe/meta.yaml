@@ -59,11 +59,12 @@ test:
     - InvestmentBlock
   commands:
     - where impi.dll                          # [win]
+    - where mkl_rt.3.dll                     # [win]
     - echo I_MPI_ROOT=%I_MPI_ROOT%            # [win]
     - where InvestmentBlock_test              # [win]
     - dumpbin /dependents StOpt.lib  # [win]
     - dumpbin /dependents %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
-    - python -c "import lief, shutil; exe = shutil.which('InvestmentBlock_test.exe') or 'InvestmentBlock_test.exe'; pe = lief.parse(exe); print('PE imports for ' + exe + ':'); print('\n'.join(' ' + dll for dll in pe.imported_libraries))" # [win]
+    - python -c "import lief, shutil; exe = shutil.which('InvestmentBlock_test.exe') or 'InvestmentBlock_test.exe'; pe = lief.parse(exe); imports = getattr(pe, 'imports', []); imports = imports() if callable(imports) else imports; dlls = [getattr(i, 'name', str(i)) for i in imports]; print('PE imports for ' + exe + ':'); print('\n'.join('  ' + dll for dll in dlls))"  # [win]
     - ucblock_solver --help
     - InvestmentBlock_test --help
     # - |  # To re-enable at the next release when Bus_Test.nc4 is available
