@@ -21,7 +21,7 @@ requirements:
     - make
     - pkgconfig  # [unix]
     - ninja  # [win]
-    - highs >=1.10.0  # [osx]
+    - highs >=1.10.0
   host:
     - libgomp  # [linux]
     - llvm-openmp   # [osx]
@@ -44,6 +44,7 @@ requirements:
     - coin-or-osi
     # - scip >=9.2.3
     - highs >=1.10.0
+    - lemon
     - stopt >=6.1  # [win]
     - stopt >=5.16  # [unix]
     - getopt-win32  # [win]
