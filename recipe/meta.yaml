@@ -87,7 +87,7 @@ test:
     - where InvestmentBlock_test              # [win]
     - dumpbin /dependents StOpt.lib  # [win]
     - dumpbin /dependents %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
-    - python diagnose_dll_symbol.py InvestmentBlock_test.exe # [win]
+    - python diagnose_dll_symbol.py %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
     - ucblock_solver --help
     - InvestmentBlock_test --help
     # - |  # To re-enable at the next release when Bus_Test.nc4 is available
