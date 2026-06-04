@@ -54,6 +54,7 @@ test:
     - vs2022_win-64  # [win]
     - python # [win]
     - py-lief # [win]
+    - curl
   source_files:
     - tools
     - InvestmentBlock
@@ -87,7 +88,10 @@ test:
     - where InvestmentBlock_test              # [win]
     - dumpbin /dependents StOpt.lib  # [win]
     - dumpbin /dependents %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
-    - python diagnose_dll_symbol.py %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
+    - dir
+    - |
+      curl -OL https://raw.githubusercontent.com/regro-cf-autotick-bot/smspp-project-feedstock/refs/heads/rebuild-mkl2026-0-1_ha137d2/recipe/diagnose_dll_symbol.py
+      python diagnose_dll_symbol.py %PREFIX%\Library\bin\InvestmentBlock_test.exe  # [win]
     - ucblock_solver --help
     - InvestmentBlock_test --help
     # - |  # To re-enable at the next release when Bus_Test.nc4 is available
