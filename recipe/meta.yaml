@@ -23,7 +23,7 @@ requirements:
     - highs >=1.10.0
   host:
     - libgomp  # [linux]
-    - llvm-openmp   # [osx]
+    - llvm-openmp   # [unix]
     - intel-openmp  # [win]
     - libboost-devel
     - libboost-mpi >={{ libboost_devel }}
