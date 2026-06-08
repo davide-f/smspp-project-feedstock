@@ -53,6 +53,7 @@ requirements:
     - mkl-devel  # [win]
     - zstd  # [win]
   run:
+    - libopenblas  # [unix]
     - msmpi  # [win]
     - pthreads-win32  # [win]
 
