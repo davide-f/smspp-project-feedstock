@@ -17,7 +17,7 @@ cxx_compiler:
 libboost_devel:
 - '1.90'
 mkl_devel:
-- '2025'
+- '2024'
 target_platform:
 - win-64
 zlib:
