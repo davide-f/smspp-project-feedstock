@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: smspp-project
@@ -9,7 +9,7 @@ source:
   sha256: 02d30a318b39491edc92b98cbe78ddbdd68891695493667b53728a80e3696967
 
 build:
-  number: 6
+  number: 0
   run_exports:
     - {{ pin_subpackage('smspp-project', max_pin='x.x.x') }}
 
@@ -24,8 +24,9 @@ requirements:
     - highs >=1.10.0
   host:
     - libgomp  # [linux]
-    - llvm-openmp   # [osx]
+    - llvm-openmp   # [unix]
     - intel-openmp  # [win]
+    - openblas
     - libboost-devel
     - libboost-mpi >={{ libboost_devel }}
     - netcdf-cxx4 *.* nompi_*
@@ -52,6 +53,7 @@ requirements:
     - mkl-devel  # [win]
     - zstd  # [win]
   run:
+    - libopenblas  # [unix]
     - msmpi  # [win]
     - pthreads-win32  # [win]
 
