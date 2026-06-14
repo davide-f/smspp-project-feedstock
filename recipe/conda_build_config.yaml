@@ -3,3 +3,5 @@ hdf5:
   - 1.14.6
 libboost_devel:
   - 1.89
+mkl_devel:
+  - 2024  # [win]
