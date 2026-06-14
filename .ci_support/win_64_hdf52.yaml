@@ -14,10 +14,14 @@ coin_or_utils:
 - '2.11'
 cxx_compiler:
 - vs2022
+hdf5:
+- '2'
 libboost_devel:
 - '1.90'
 mkl_devel:
-- '2024'
+- '2026'
+openblas:
+- 0.3.*
 target_platform:
 - win-64
 zlib:

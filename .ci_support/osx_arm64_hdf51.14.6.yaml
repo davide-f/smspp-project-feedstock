@@ -22,6 +22,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '19'
+hdf5:
+- 1.14.6
 libaec:
 - '1'
 libboost_devel:
@@ -31,12 +33,14 @@ libcurl:
 llvm_openmp:
 - '19'
 macos_machine:
-- x86_64-apple-darwin13.4.0
+- arm64-apple-darwin20.0.0
 mpich:
 - '5'
+openblas:
+- 0.3.*
 openssl:
 - '3.5'
 target_platform:
-- osx-64
+- osx-arm64
 zlib:
 - '1'
