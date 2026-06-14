@@ -18,6 +18,8 @@ libboost_devel:
 - '1.90'
 mkl_devel:
 - '2024'
+openblas:
+- 0.3.*
 target_platform:
 - win-64
 zlib:

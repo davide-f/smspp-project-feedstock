@@ -28,6 +28,8 @@ libcurl:
 - '8'
 mpich:
 - '5'
+openblas:
+- 0.3.*
 openssl:
 - '3.5'
 target_platform:

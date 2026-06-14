@@ -1,2 +1,8 @@
-libboost_devel:  
+hdf5:
+  - 1.14.6
+libnetcdf:
+  - 4.9.4
+libboost_devel:
   - 1.89
+mkl_devel:
+  - 2024  # [win]
