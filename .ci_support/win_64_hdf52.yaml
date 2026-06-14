@@ -19,7 +19,7 @@ hdf5:
 libboost_devel:
 - '1.90'
 mkl_devel:
-- '2026'
+- '2024'
 openblas:
 - 0.3.*
 target_platform:
