@@ -22,8 +22,6 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '19'
-hdf5:
-- 1.14.6
 libaec:
 - '1'
 libboost_devel:
