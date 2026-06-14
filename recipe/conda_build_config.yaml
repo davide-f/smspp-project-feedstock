@@ -1,2 +1,5 @@
-libboost_devel:  
+hdf5:
+  - 2
+  - 1.14.6
+libboost_devel:
   - 1.89
