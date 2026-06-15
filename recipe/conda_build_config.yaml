@@ -1,6 +1,2 @@
-libnetcdf:
-  - 4.9.3
-libboost_devel:
-  - 1.89
 mkl_devel:
   - 2024  # [win]
