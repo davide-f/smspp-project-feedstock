@@ -4,6 +4,9 @@ hdf5:
 libnetcdf:
   - 4.10.0
   - 4.9.3
+libboost-devel:
+  - 1.90
+  - 1.88
 zip_keys:
   - - hdf5
     - libnetcdf
