@@ -1,5 +1,3 @@
-hdf5:
-  - 1.14.6
 libnetcdf:
   - 4.9.3
 libboost_devel:
