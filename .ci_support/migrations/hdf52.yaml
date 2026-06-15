@@ -9,4 +9,10 @@ __migrator:
 hdf5:
 - '2'
 - '1.14.6'
+libnetcdf:
+- '4.10.0'
+- '4.9.3'
+zip_keys:
+- - hdf5
+  - libnetcdf
 migrator_ts: 1774274234.55363
