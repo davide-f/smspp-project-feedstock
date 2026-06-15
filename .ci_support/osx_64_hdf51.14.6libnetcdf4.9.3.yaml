@@ -23,7 +23,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 hdf5:
-- '2'
+- 1.14.6
 libaec:
 - '1'
 libboost_devel:
@@ -35,7 +35,7 @@ libnetcdf:
 llvm_openmp:
 - '19'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 mpich:
 - '5'
 netcdf_cxx4:
@@ -48,6 +48,9 @@ pin_run_as_build:
   netcdf-cxx4:
     max_pin: x.x
 target_platform:
-- osx-arm64
+- osx-64
+zip_keys:
+- - hdf5
+  - libnetcdf
 zlib:
 - '1'

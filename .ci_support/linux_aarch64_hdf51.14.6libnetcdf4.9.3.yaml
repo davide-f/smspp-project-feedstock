@@ -42,6 +42,9 @@ pin_run_as_build:
   netcdf-cxx4:
     max_pin: x.x
 target_platform:
-- linux-64
+- linux-aarch64
+zip_keys:
+- - hdf5
+  - libnetcdf
 zlib:
 - '1'

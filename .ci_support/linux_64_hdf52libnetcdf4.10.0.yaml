@@ -21,7 +21,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 hdf5:
-- 1.14.6
+- '2'
 libaec:
 - '1'
 libboost_devel:
@@ -29,7 +29,7 @@ libboost_devel:
 libcurl:
 - '8'
 libnetcdf:
-- 4.9.3
+- 4.10.0
 mpich:
 - '5'
 netcdf_cxx4:
@@ -42,6 +42,9 @@ pin_run_as_build:
   netcdf-cxx4:
     max_pin: x.x
 target_platform:
-- linux-aarch64
+- linux-64
+zip_keys:
+- - hdf5
+  - libnetcdf
 zlib:
 - '1'

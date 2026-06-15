@@ -49,5 +49,8 @@ pin_run_as_build:
     max_pin: x.x
 target_platform:
 - osx-arm64
+zip_keys:
+- - hdf5
+  - libnetcdf
 zlib:
 - '1'
