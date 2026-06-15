@@ -9,7 +9,7 @@ source:
   sha256: 2a0527040e383f4bbb7ff0516d835bfbe6920d15306f8c35d93a0f786e210fb9
 
 build:
-  number: 2
+  number: 3
   run_exports:
     - {{ pin_subpackage('smspp-project', max_pin='x.x.x') }}
 
@@ -29,9 +29,14 @@ requirements:
     - openblas
     - libboost-devel
     - libboost-mpi >={{ libboost_devel }}
-    - netcdf-cxx4 *.* nompi_*
-    - libnetcdf *.* nompi_*
-    - hdf5 *.* nompi_*
+    - netcdf-cxx4
+    - netcdf-cxx4 * nompi_*
+    - libnetcdf
+    - libnetcdf <4.10
+    - libnetcdf * nompi_*
+    - hdf5
+    - hdf5 <2
+    - hdf5 * nompi_*
     - libaec  # [unix]
     - openssl  # [unix]
     - libcurl  # [unix]
