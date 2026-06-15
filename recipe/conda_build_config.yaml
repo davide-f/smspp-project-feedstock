@@ -1,8 +1,11 @@
 hdf5:
+  - 2
   - 1.14.6
 libnetcdf:
-  - 4.9.4
-libboost_devel:
-  - 1.89
+  - 4.10.0
+  - 4.9.3
+zip_keys:
+  - - hdf5
+    - libnetcdf
 mkl_devel:
   - 2024  # [win]

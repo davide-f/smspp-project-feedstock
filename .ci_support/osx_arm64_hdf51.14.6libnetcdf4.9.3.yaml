@@ -22,23 +22,35 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '19'
+hdf5:
+- 1.14.6
 libaec:
 - '1'
 libboost_devel:
 - '1.90'
 libcurl:
 - '8'
+libnetcdf:
+- 4.9.3
 llvm_openmp:
 - '19'
 macos_machine:
 - arm64-apple-darwin20.0.0
 mpich:
 - '5'
+netcdf_cxx4:
+- '4.3'
 openblas:
 - 0.3.*
 openssl:
 - '3.5'
+pin_run_as_build:
+  netcdf-cxx4:
+    max_pin: x.x
 target_platform:
 - osx-arm64
+zip_keys:
+- - hdf5
+  - libnetcdf
 zlib:
 - '1'
