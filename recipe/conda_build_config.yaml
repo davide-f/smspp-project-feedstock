@@ -7,7 +7,7 @@ libnetcdf:
 mpi:
   - mpich    # [unix]
   - msmpi    # [win]
-  - impi  # [win]
+  - impi-devel  # [win]
 zip_keys:
   - - hdf5
     - libnetcdf

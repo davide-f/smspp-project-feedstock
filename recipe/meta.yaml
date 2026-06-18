@@ -25,7 +25,7 @@ requirements:
   host:
     - libgomp  # [linux]
     - llvm-openmp   # [unix]
-    - llvm-openmp  # [win and mpi == "impi"]
+    - llvm-openmp  # [win and mpi != "msmpi"]
     - intel-openmp  # [win and mpi == "msmpi"]
     - openblas
     - libboost-devel
