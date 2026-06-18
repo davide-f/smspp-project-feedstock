@@ -12,4 +12,5 @@ zip_keys:
   - - hdf5
     - libnetcdf
 mkl_devel:
-  - 2024  # [win]
+  - 2024  # [win and mpi == "msmpi"]
+  - 2026  # [win and mpi != "msmpi"] --- IGNORE ---
