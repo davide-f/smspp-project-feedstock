@@ -53,10 +53,10 @@ requirements:
     - stopt >=6.3  # [win]
     - stopt >=5.16  # [unix]
     - getopt-win32  # [win]
-    - pthreads-win32  # [win]
     - mkl-devel  # [win]
     - zstd  # [win]
     - winpthreads-devel  # [win and mpi != "msmpi"]
+    - pthreads-win32  # [win and mpi == "msmpi"]
   run:
     - libopenblas  # [unix]
     - msmpi  # [win and mpi == "msmpi"]
