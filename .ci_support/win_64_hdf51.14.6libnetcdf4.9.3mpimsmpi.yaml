@@ -22,10 +22,16 @@ libnetcdf:
 - 4.9.3
 mkl_devel:
 - '2024'
+mpi:
+- msmpi
+mpich:
+- '5'
 netcdf_cxx4:
 - '4.3'
 openblas:
 - 0.3.*
+openmpi:
+- '4'
 pin_run_as_build:
   netcdf-cxx4:
     max_pin: x.x
