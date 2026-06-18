@@ -42,8 +42,7 @@ requirements:
     - bzip2
     - zlib
     - eigen
-    - {{ mpi }}  # [mpi != "impi"]
-    - impi-devel >=2021.17  # [mpi == "impi"]
+    - {{ mpi }}
     - coin-or-utils
     - coin-or-clp
     - coin-or-osi
